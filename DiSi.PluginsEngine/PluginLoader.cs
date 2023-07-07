@@ -6,12 +6,9 @@ public class PluginLoader
 {
     public static Plugin LoadNew(string path)
     {
-        if(File.Exists(path))
-        {
-            var assembly = Assembly.LoadFrom(path);
-            return new Plugin(assembly);
-        }
+        if (!File.Exists(path)) throw new Exception("File not found!");
 
-        throw new Exception("File not found!");
+        var assembly = Assembly.LoadFrom(path);
+        return new Plugin(assembly);
     }
 }

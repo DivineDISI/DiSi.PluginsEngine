@@ -18,7 +18,9 @@ public class Plugin
 
     public void Execute()
     {
-        var type = Assembly.GetTypes().FirstOrDefault(x=>x.GetCustomAttribute<TestAttribute>() != null);
+        var type = Assembly.GetTypes()
+            .FirstOrDefault(x=>x.GetCustomAttribute<TestAttribute>() != null) ?? throw new NullReferenceException();
+
         var inst = Activator.CreateInstance(type);
         
         var result = type.GetMethods().FirstOrDefault(x=>x.GetCustomAttribute<MethodAttribute>()!=null)!.Invoke(inst, null);
