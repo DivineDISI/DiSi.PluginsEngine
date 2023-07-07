@@ -11,6 +11,8 @@ namespace DiSi.PluginsEngine
                 var assembly = Assembly.LoadFrom(path);
                 return new Plugin(assembly);
             }
+
+            throw new Exception("File not found!");
         }
     }
 }
