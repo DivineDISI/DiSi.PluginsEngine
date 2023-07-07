@@ -1,6 +1,6 @@
 ﻿namespace DiSi.PluginsEngine
 {
-    public class Class1
+    public class PluginLoader
     {
 
     }
