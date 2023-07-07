@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using DiSi.PluginsEngine.Core.Attributes;
 
 namespace DiSi.PluginsEngine;
 public class Plugin
@@ -17,7 +18,7 @@ public class Plugin
 
     public void Execute()
     {
-        var type = Assembly.GetType("DiSi.Tests.TestPlugin.ConsolePlugin")!;
+        var type = Assembly.GetTypes().FirstOrDefault(x=>x.GetCustomAttribute<TestAttribute>() != null);
         var inst = Activator.CreateInstance(type);
         
         var result = type.GetMethod("Print")!.Invoke(inst, null);

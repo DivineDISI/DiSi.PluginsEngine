@@ -4,7 +4,14 @@
     <projectFile>DiSi.Tests.PluginsEngine/DiSi.Tests.PluginsEngine.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9a8754d-1f81-4a1c-88ca-b727862c04b7" name="Changes" comment="" />
+    <list default="true" id="a9a8754d-1f81-4a1c-88ca-b727862c04b7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DiSi.PluginsEngine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DiSi.PluginsEngine/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DiSi.PluginsEngine.sln" beforeDir="false" afterPath="$PROJECT_DIR$/DiSi.PluginsEngine.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DiSi.PluginsEngine/DiSi.PluginsEngine.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DiSi.PluginsEngine/DiSi.PluginsEngine.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DiSi.PluginsEngine/Plugin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DiSi.PluginsEngine/Plugin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DiSi.Tests.TestPlugin/ConsolePlugin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DiSi.Tests.TestPlugin/ConsolePlugin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DiSi.Tests.TestPlugin/DiSi.Tests.TestPlugin.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DiSi.Tests.TestPlugin/DiSi.Tests.TestPlugin.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1688746478495</updated>
       <workItem from="1688746479890" duration="1022000" />
-      <workItem from="1688747599115" duration="300000" />
+      <workItem from="1688747599115" duration="1498000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1688747494657</created>
