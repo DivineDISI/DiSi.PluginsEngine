@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 
 namespace DiSi.PluginsEngine;
+
 public class PluginLoader
 {
     public static Plugin LoadNew(string path)
