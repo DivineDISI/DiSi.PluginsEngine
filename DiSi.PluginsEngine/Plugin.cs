@@ -21,6 +21,6 @@ public class Plugin
         var type = Assembly.GetTypes().FirstOrDefault(x=>x.GetCustomAttribute<TestAttribute>() != null);
         var inst = Activator.CreateInstance(type);
         
-        var result = type.GetMethod("Print")!.Invoke(inst, null);
+        var result = type.GetMethods().FirstOrDefault(x=>x.GetCustomAttribute<MethodAttribute>()!=null)!.Invoke(inst, null);
     }
 }

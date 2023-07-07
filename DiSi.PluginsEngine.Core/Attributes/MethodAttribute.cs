@@ -1,6 +1,6 @@
 namespace DiSi.PluginsEngine.Core.Attributes;
 
-public class MethodAttribute
+[AttributeUsage(AttributeTargets.Method)]
+public class MethodAttribute : Attribute
 {
-    
 }
