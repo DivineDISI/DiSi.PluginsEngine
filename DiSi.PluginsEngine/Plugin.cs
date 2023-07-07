@@ -17,7 +17,7 @@ public class Plugin
 
     public void Execute()
     {
-        var type = Assembly.GetType("ConsolePlugin")!;
+        var type = Assembly.GetType("DiSi.Tests.TestPlugin.ConsolePlugin")!;
         var inst = Activator.CreateInstance(type);
         
         var result = type.GetMethod("Print")!.Invoke(inst, null);
