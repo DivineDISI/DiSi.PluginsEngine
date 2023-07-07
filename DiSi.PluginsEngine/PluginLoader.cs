@@ -1,18 +1,16 @@
 ﻿using System.Reflection;
 
-namespace DiSi.PluginsEngine
+namespace DiSi.PluginsEngine;
+public class PluginLoader
 {
-    public class PluginLoader
+    public static Plugin LoadNew(string path)
     {
-        public static Plugin LoadNew(string path)
+        if(File.Exists(path))
         {
-            if(File.Exists(path))
-            {
-                var assembly = Assembly.LoadFrom(path);
-                return new Plugin(assembly);
-            }
-
-            throw new Exception("File not found!");
+            var assembly = Assembly.LoadFrom(path);
+            return new Plugin(assembly);
         }
+
+        throw new Exception("File not found!");
     }
 }
