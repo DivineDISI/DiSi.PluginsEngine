@@ -14,4 +14,12 @@ public class Plugin
     }
 
     internal Assembly Assembly { get; set; }
+
+    public void Execute()
+    {
+        var type = Assembly.GetType("ConsolePlugin")!;
+        var inst = Activator.CreateInstance(type);
+        
+        var result = type.GetMethod("Print")!.Invoke(inst, null);
+    }
 }
